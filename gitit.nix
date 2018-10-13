@@ -11,7 +11,7 @@
 mkDerivation {
   pname = "gitit";
   version = "0.12.3";
-  src = ./.;
+  src = fetchTarball "https://github.com/jgm/gitit/archive/0.12.3.tar.gz";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = true;
